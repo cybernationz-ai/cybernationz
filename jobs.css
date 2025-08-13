@@ -1,0 +1,458 @@
+/* Jobs Page Styles */
+.jobs-page {
+    padding-top: 80px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+}
+
+.jobs-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('path/to/your/hero-image.jpg') center/cover;
+    padding: 4rem 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+}
+
+.jobs-hero h1 {
+    font-size: 3rem;
+    color: #00ffff;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.jobs-hero p {
+    font-size: 1.5rem;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+/* Job Filters */
+.job-filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    max-width: 1200px;
+}
+
+.filter-btn {
+    padding: 1rem 2rem;
+    background: rgba(0, 255, 255, 0.1);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    font-weight: 500;
+    min-width: 150px;
+    text-align: center;
+}
+
+.filter-btn:hover {
+    background: rgba(0, 255, 255, 0.2);
+    border-color: rgba(0, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 255, 255, 0.1);
+}
+
+.filter-btn.active {
+    background: rgba(0, 255, 255, 0.3);
+    border-color: rgba(0, 255, 255, 0.5);
+    color: #00ffff;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+/* Sub Filters */
+.sub-filters {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    margin: 1rem auto;
+    padding: 0 1rem;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.sub-filters.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sub-filter-btn {
+    padding: 0.7rem 1.2rem;
+    background: rgba(0, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    min-width: 120px;
+    text-align: center;
+}
+
+.sub-filter-btn:hover {
+    background: rgba(0, 255, 255, 0.15);
+    border-color: rgba(0, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.sub-filter-btn.active {
+    background: rgba(0, 255, 255, 0.2);
+    border-color: rgba(0, 255, 255, 0.3);
+    color: #00ffff;
+}
+
+/* Jobs Grid */
+.jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.job-card {
+    background: rgba(0, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    display: none; /* Hide all cards by default */
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.job-card.active {
+    display: block; /* Show active cards */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.1);
+    border-color: rgba(0, 255, 255, 0.3);
+}
+
+.job-card h3 {
+    color: #00ffff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.job-details {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+.job-details i {
+    color: #00ffff;
+    margin-right: 0.5rem;
+}
+
+.description {
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.requirements {
+    margin-bottom: 1.5rem;
+}
+
+.requirements h4 {
+    color: #00ffff;
+    margin-bottom: 0.5rem;
+}
+
+.requirements ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.requirements li {
+    color: #ffffff;
+    opacity: 0.8;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.requirements li::before {
+    content: "•";
+    color: #00ffff;
+    position: absolute;
+    left: -1rem;
+}
+
+.apply-btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: transparent;
+    color: #00ffff;
+    border: 2px solid #00ffff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 100%;
+}
+
+.apply-btn:hover {
+    background: #00ffff;
+    color: #000000;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    .filter-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.95rem;
+        min-width: 130px;
+    }
+
+    .sub-filter-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+        min-width: 110px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .job-filters {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.8rem;
+    }
+
+    .filter-btn {
+        width: 100%;
+        padding: 0.9rem;
+    }
+
+    .sub-filters {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+    }
+
+    .sub-filter-btn {
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    .jobs-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .filter-btn {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+
+    .sub-filter-btn {
+        font-size: 0.85rem;
+        padding: 0.7rem;
+    }
+
+    .job-card {
+        padding: 1.5rem;
+    }
+
+    .job-details {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* Application Modal */
+.application-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.application-modal.active {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-content {
+    background: #1a1a1a;
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem;
+    position: relative;
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.application-modal.active .modal-content {
+    transform: translateY(0);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+}
+
+.modal-header h2 {
+    color: #00ffff;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.close-modal {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.close-modal:hover {
+    color: #00ffff;
+}
+
+.application-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.8rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: rgba(0, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.form-group input[type="file"] {
+    padding: 0.5rem;
+    background: rgba(0, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.form-group input[type="file"]::-webkit-file-upload-button {
+    background: rgba(0, 255, 255, 0.2);
+    border: none;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-group input[type="file"]::-webkit-file-upload-button:hover {
+    background: rgba(0, 255, 255, 0.3);
+}
+
+.form-actions {
+    margin-top: 1rem;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(0, 255, 255, 0.2);
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: rgba(0, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Responsive Design for Modal */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    .modal-header h2 {
+        font-size: 1.3rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .modal-content {
+        padding: 1rem;
+    }
+
+    .modal-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.6rem;
+    }
+} 

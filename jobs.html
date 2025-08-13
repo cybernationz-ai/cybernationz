@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Offers - CYBERNATIONZ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="jobs.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">CYBERNATIONZ</a>
+            <button class="menu-btn" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <!-- <li><a href="projects.html">Projects</a></li>
+                <li><a href="clients.html">Clients</a></li> -->
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="jobs.html">Job Offers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="jobs-page">
+        <section class="jobs-hero">
+            <div class="container">
+                <h1>Career Opportunities</h1>
+                <p>Join Our Team of Cybersecurity Experts</p>
+            </div>
+        </section>
+
+        <section class="job-listings">
+            <div class="container">
+                <div class="job-filters">
+                    <button class="filter-btn active" data-filter="all">All Positions</button>
+                    <button class="filter-btn" data-filter="technical">Technical</button>
+                    <button class="filter-btn" data-filter="non-technical">Non-Technical</button>
+                </div>
+
+                <div class="sub-filters technical-subfilters" style="display: none;">
+                    <button class="sub-filter-btn" data-filter="fullstack">Full-Stack Developer</button>
+                    <button class="sub-filter-btn" data-filter="security">Cybersecurity Analyst</button>
+                    <button class="sub-filter-btn" data-filter="network">Network Engineer</button>
+                    <button class="sub-filter-btn" data-filter="ctf">CTF Developer</button>
+                    <button class="sub-filter-btn" data-filter="bug">Bug Hunter</button>
+                </div>
+
+                <div class="sub-filters non-technical-subfilters" style="display: none;">
+                    <button class="sub-filter-btn" data-filter="marketing">Digital Marketing</button>
+                    <button class="sub-filter-btn" data-filter="designer">Designer</button>
+                    <button class="sub-filter-btn" data-filter="editor">Video Editor</button>
+                    <button class="sub-filter-btn" data-filter="content">Content Creator</button>
+                </div>
+
+                <div class="jobs-grid">
+                    <!-- Full-Stack Developer -->
+                    <div class="job-card" data-category="fullstack">
+                        <h3>Full-Stack Developer</h3>
+                        <div class="job-details">
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Chennai, India</span>
+                            <span class="type"><i class="fas fa-clock"></i> Full-time</span>
+                        </div>
+                        <p class="description">Develop and maintain secure web applications with modern technologies.</p>
+                        <div class="requirements">
+                            <h4>Requirements:</h4>
+                            <ul>
+                                <li>0-2+ years of full-stack development experience</li>
+                                <li>Proficiency in React, Node.js, and Python</li>
+                                <li>Experience with secure coding practices</li>
+                                <li>Knowledge of database security</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="apply-btn">Apply Now</a>
+                    </div>
+
+                    <!-- Cybersecurity Analyst -->
+                    <div class="job-card" data-category="security">
+                        <h3>Cybersecurity Analyst</h3>
+                        <div class="job-details">
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Chennai, India</span>
+                            <span class="type"><i class="fas fa-clock"></i> Full-time</span>
+                        </div>
+                        <p class="description">Monitor and protect our systems from security threats and vulnerabilities.</p>
+                        <div class="requirements">
+                            <h4>Requirements:</h4>
+                            <ul>
+                                <li>0-3+ years of cybersecurity experience</li>
+                                <li>Certified Information Systems Security Professional (CISSP)</li>
+                                <li>Experience with SIEM tools and threat detection</li>
+                                <li>Strong knowledge of security frameworks</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="apply-btn">Apply Now</a>
+                    </div>
+
+                    <!-- Network Engineer -->
+                    <div class="job-card" data-category="network">
+                        <h3>Network Engineer</h3>
+                        <div class="job-details">
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Chennai, India</span>
+                            <span class="type"><i class="fas fa-clock"></i> Full-time</span>
+                        </div>
+                        <p class="description">Design and implement secure network infrastructure solutions.</p>
+                        <div class="requirements">
+                            <h4>Requirements:</h4>
+                            <ul>
+                                <li>0-3+ years of network engineering experience</li>
+                                <li>CCNA or CCNP certification</li>
+                                <li>Experience with network security protocols</li>
+                                <li>Knowledge of cloud networking</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="apply-btn">Apply Now</a>
+                    </div>
+
+                    <!-- CTF Developer -->
+                    <div class="job-card" data-category="ctf">
+                        <h3>CTF Developer</h3>
+                        <div class="job-details">
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Remote</span>
+                            <span class="type"><i class="fas fa-clock"></i> Full-time</span>
+                        </div>
+                        <p class="description">Create and maintain Capture The Flag challenges and security training platforms.</p>
+                        <div class="requirements">
+                            <h4>Requirements:</h4>
+                            <ul>
+                                <li>0-2+ years of CTF development experience</li>
+                                <li>Strong programming skills in Python/C++</li>
+                                <li>Experience with security challenges</li>
+                                <li>Knowledge of various security domains</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="apply-btn">Apply Now</a>
+                    </div>
+
+                    <!-- Bug Hunter -->
+                    <div class="job-card" data-category="bug">
+                        <h3>Bug Hunter</h3>
+                        <div class="job-details">
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Remote</span>
+                            <span class="type"><i class="fas fa-clock"></i> Full-time</span>
+                        </div>
+                        <p class="description">Identify and report security vulnerabilities in our systems and applications.</p>
+                        <div class="requirements">
+                            <h4>Requirements:</h4>
+                            <ul>
+                                <li>Proven track record of bug bounty programs</li>
+                                <li>Experience with penetration testing</li>
+                                <li>Knowledge of common vulnerabilities</li>
+                                <li>Strong analytical skills</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="apply-btn">Apply Now</a>
+                    </div>
+
+                    <!-- Digital Marketing -->
+                    <div class="job-card" data-category="marketing">
+                        <h3>Digital Marketing Specialist</h3>
+                        <div class="job-details">
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Chennai, India</span>
+                            <span class="type"><i class="fas fa-clock"></i> Full-time</span>
+                        </div>
+                        <p class="description">Drive our digital presence and marketing strategies in the cybersecurity industry.</p>
+                        <div class="requirements">
+                            <h4>Requirements:</h4>
+                            <ul>
+                                <li>0-3+ years of digital marketing experience</li>
+                                <li>Experience with SEO and social media marketing</li>
+                                <li>Knowledge of cybersecurity industry</li>
+                                <li>Strong analytical and communication skills</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="apply-btn">Apply Now</a>
+                    </div>
+
+                    <!-- Designer -->
+                    <div class="job-card" data-category="designer">
+                        <h3>UI/UX Designer</h3>
+                        <div class="job-details">
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Chennai, India</span>
+                            <span class="type"><i class="fas fa-clock"></i> Full-time</span>
+                        </div>
+                        <p class="description">Create intuitive and secure user interfaces for our cybersecurity products.</p>
+                        <div class="requirements">
+                            <h4>Requirements:</h4>
+                            <ul>
+                                <li>0-2+ years of UI/UX design experience</li>
+                                <li>Proficiency in Figma and Adobe Creative Suite</li>
+                                <li>Understanding of security-first design principles</li>
+                                <li>Portfolio showcasing security-focused designs</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="apply-btn">Apply Now</a>
+                    </div>
+
+                    <!-- Video Editor -->
+                    <div class="job-card" data-category="editor">
+                        <h3>Video Editor & Motion Graphics Artist</h3>
+                        <div class="job-details">
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Remote</span>
+                            <span class="type"><i class="fas fa-clock"></i> Full-time</span>
+                        </div>
+                        <p class="description">Create engaging video content for our cybersecurity training and marketing materials.</p>
+                        <div class="requirements">
+                            <h4>Requirements:</h4>
+                            <ul>
+                                <li>0-2+ years of video editing experience</li>
+                                <li>Proficiency in Adobe Premiere Pro and After Effects</li>
+                                <li>Experience with motion graphics</li>
+                                <li>Understanding of cybersecurity concepts</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="apply-btn">Apply Now</a>
+                    </div>
+
+                    <!-- Content Creator -->
+                    <div class="job-card" data-category="content">
+                        <h3>Cybersecurity Content Creator</h3>
+                        <div class="job-details">
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Remote</span>
+                            <span class="type"><i class="fas fa-clock"></i> Full-time</span>
+                        </div>
+                        <p class="description">Create engaging and educational content about cybersecurity for various platforms.</p>
+                        <div class="requirements">
+                            <h4>Requirements:</h4>
+                            <ul>
+                                <li>0-2+ years of content creation experience</li>
+                                <li>Strong writing and storytelling skills</li>
+                                <li>Understanding of cybersecurity topics</li>
+                                <li>Experience with social media platforms</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="apply-btn">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Job Application Modal -->
+    <div class="application-modal" id="applicationModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Apply for <span id="jobTitle">Position</span></h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <form id="applicationForm" class="application-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Current Location *</label>
+                    <input type="text" id="location" name="location" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">Years of Experience *</label>
+                    <input type="number" id="experience" name="experience" min="0" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="resume">Upload Resume (PDF/DOC) *</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="portfolio">Portfolio URL (if applicable)</label>
+                    <input type="url" id="portfolio" name="portfolio">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Cover Letter *</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">Submit Application</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
